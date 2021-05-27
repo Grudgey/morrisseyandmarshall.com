@@ -7,7 +7,7 @@
 
 let currentArticle = document.location.href;
 currentArticle = currentArticle.slice(currentArticle.length - 1, currentArticle.length);
-
+//
 function generatePreviews() {
   let html = document.querySelector(".article-previews");
 
@@ -23,54 +23,51 @@ function generatePreviews() {
     html.appendChild(container);
   });
 }
-
-function generateArticle() {
-
-  let html = document.querySelector(".article-container");
-
-  //   function getKeyByValue(object, value) {
-  //   return Object.keys(object).find(key => object[key] === value);
-  // }
-
-  console.log("current article is " + currentArticle);
-  if (currentArticle > articles.length) {
-    let title = document.createElement("h3");
-    title.innerHTML = "Article not found";
-    html.appendChild(title);
-  } else {
-    let article = articles[currentArticle - 1];
-    let title = document.createElement("h3");
-    title.innerHTML = articlePreviews[currentArticle].title;
-    html.appendChild(title);
-    for (property in article) {
-      console.log(article[property]);
-
-      switch (property) {
-
-        case "text":
-          let text = document.createElement("p");
-          text.innerHTML = article[property];
-          html.appendChild(text);
-          break;
-        case "image":
-          let image = document.createElement("img");
-          image.src = article[property];
-          html.appendChild(image);
-          break;
-        default:
-      }
-    }
-  }
-}
-
+//
+// function generateArticle() {
+//
+//   let html = document.querySelector(".article-container");
+//
+//   //   function getKeyByValue(object, value) {
+//   //   return Object.keys(object).find(key => object[key] === value);
+//   // }
+//
+//   console.log("current article is " + currentArticle);
+//   if (currentArticle > articles.length) {
+//     let title = document.createElement("h3");
+//     title.innerHTML = "Article not found";
+//     html.appendChild(title);
+//   } else {
+//     let article = articles[currentArticle - 1];
+//     let title = document.createElement("h3");
+//     title.innerHTML = articlePreviews[currentArticle].title;
+//     html.appendChild(title);
+//     for (property in article) {
+//       console.log(article[property]);
+//
+//       switch (property) {
+//
+//         case "text":
+//           let text = document.createElement("p");
+//           text.innerHTML = article[property];
+//           html.appendChild(text);
+//           break;
+//         case "image":
+//           let image = document.createElement("img");
+//           image.src = article[property];
+//           html.appendChild(image);
+//           break;
+//         default:
+//       }
+//     }
+//   }
+// }
+//
 if (document.querySelector(".article-previews")) {
-  console.log("generating previews");
   generatePreviews();
 } else {
-  generateArticle();
+  // generateArticle();
 }
-
-console.log(currentArticle);
 
 // articles.forEach((article, i) => {
 // 	//create a div with col-lg-4 col-md-6 classes and then go through each attribute

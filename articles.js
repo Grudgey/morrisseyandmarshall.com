@@ -1,4 +1,4 @@
-let articlePreviews = [{
+const articlePreviews = [{
      title: "M&M NEWSLETTER #13",
      image: "images/18/1.png"
 }, {
@@ -54,7 +54,7 @@ let articlePreviews = [{
      image: "images/1/1.png"
 }];
 
-let articles = [{
+const articles = [{
      text: "It's the 12th of June and our first free day in over 3 weeks. This month, we continue the 'We Rise' tour with festivals in the UK and our first visit to Germany, where we will be having our album launch party. We're going up a gear in June and I can't tell you the full details until it happens but I can tell you that it involves private planes and a gig on an island in the middle of the north sea.",
      image: "images/18/1.png",
      image: "images/18/2.png",
@@ -254,7 +254,7 @@ let articles = [{
 	text: "Love & Be Loved will be released on 11.11.16",
 	text: "We’ve got some more amazing news… We’re finally going to have some VINYL for you (YES)! ",
 	text: "We’re doing a double A side single release for ‘Love & Be Loved’ and ‘Cold November Sunrise’. I’ve also started writing some hand written lyric sheets to coincide with this release. There will be a very limited number of these ‘collectors’ items for sale so make sure to pre-order here…  ",
-	text: "Love & Be Loved/Cold November Sunrise Vinyl 7" (Limited Edition)",
+	text: "Love & Be Loved/Cold November Sunrise Vinyl 7\" (Limited Edition)",
 	text: "Love & Be Loved/Cold November Sunrise Handwritten Lyrics",
 	image: "images/9/10.png",
 	text: "Big Love \n Darren \n M&M"
